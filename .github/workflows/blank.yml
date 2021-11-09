@@ -37,5 +37,5 @@ jobs:
 
       - name: NuGet push
         run: |
-          dotnet nuget add source https://nuget.pkg.github.com/rajeevnarang/index.json --name github --username rajeevknarang@gmail.com --password 050916Gu --store-password-in-clear-text
+          dotnet nuget add source https://nuget.pkg.github.com/rajeevnarang/index.json --name github --username rajeevknarang@gmail.com --password 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 --store-password-in-clear-text
           dotnet nuget push **/*.nupkg --source github
