@@ -34,3 +34,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      - name: NuGet push
+      run: |
+        dotnet nuget add source https://nuget.pkg.github.com/rajeevnarang/index.json --name github --username rajeevknarang@gmail.com --password 050916Gu --store-password-in-clear-text
+        dotnet nuget push **/*.* --source github
