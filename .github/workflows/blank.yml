@@ -36,6 +36,4 @@ jobs:
           echo test, and deploy your project.
 
       - name: NuGet push
-        run: |
-          dotnet nuget add source https://nuget.pkg.github.com/rajeevnarang/index.json --name github --username rajeevknarang@gmail.com --password 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 --store-password-in-clear-text
-          dotnet nuget push **/*.nupkg --source github
+        run: copy **/*.nupkg c:\temp
